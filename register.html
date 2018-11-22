@@ -1,4 +1,4 @@
-<?php include('server.html') ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,15 +10,13 @@
   	<h2>Register</h2>
   </div>
 	
-  <form method="post" action="register.php">
-  	<?php include('errors.html'); ?>
   	<div class="input-group">
   	  <label>Username</label>
-  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	  <input type="text" name="username" value="">
   	</div>
   	<div class="input-group">
   	  <label>Email</label>
-  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	  <input type="email" name="email" value="">
   	</div>
   	<div class="input-group">
   	  <label>Password</label>
@@ -32,7 +30,7 @@
   	  <button type="submit" class="btn" name="reg_user">Register</button>
   	</div>
   	<p>
-  		Have an account? <a href="login.php">Sign in</a>
+  		Have an account? <a href="login.html">Sign in</a>
   	</p>
   </form>
 </body>
